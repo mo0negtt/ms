@@ -1,145 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MS Messages via Sockets</title>
-    <meta name="description" content="A real-time messaging application using WebSockets.">
-    <link rel="icon" href="favicon.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satoshi:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Main application container -->
-    <div class="app-container">
-        
-        <!-- Sidebar with room list -->
-        <div class="sidebar">
-            <!-- Header with logo and brand -->
-            <div class="sidebar-header">
-                <div class="logo-brand">
-                    <img src="ms.svg" alt="MSS Logo" class="logo">
-                    <div class="brand-info">
-                        <h1 class="brand-title">MS</h1>
-                        <p class="brand-subtitle">Socket Messages</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Room actions -->
-            <div class="room-actions">
-                <button id="newRoomBtn" class="neo-button primary" data-testid="button-new-room">
-                    NEW ROOM
-                </button>
-                <div id="newRoomForm" class="new-room-form hidden">
-                    <input type="text" id="roomNameInput" placeholder="ROOM NAME..." maxlength="30" data-testid="input-room-name">
-                    <div class="form-buttons">
-                        <button id="createRoomBtn" class="neo-button small primary" data-testid="button-create-room">CREATE</button>
-                        <button id="cancelRoomBtn" class="neo-button small secondary" data-testid="button-cancel-room">CANCEL</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Room list -->
-            <div class="room-list">
-                <h3 class="section-title">ROOMS</h3>
-                <div id="roomList" class="rooms-container">
-                    <!-- Rooms will be populated here -->
-                </div>
-            </div>
-            
-            <!-- Connection status -->
-            <div class="connection-status">
-                <div class="status-indicator">
-                    <div id="statusDot" class="status-dot offline"></div>
-                    <span id="connectionText">CONNECTING...</span>
-                </div>
-                <div class="user-info">
-                    <span id="currentUsername">GUEST_USER</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Main chat area -->
-        <div class="main-chat">
-            
-            <!-- Chat room header -->
-            <div class="chat-header">
-                <div class="room-info">
-                    <h2 id="currentRoomName">SELECT A ROOM</h2>
-                    <p id="roomDescription">CHOOSE A ROOM FROM THE SIDEBAR TO START CHATTING</p>
-                </div>
-                <div class="chat-actions">
-                    <div class="participants-count">
-                        <span id="participantsCount">0</span>
-                        <span>ONLINE</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Messages container -->
-            <div class="messages-container" id="messagesContainer">
-                <!-- Welcome message -->
-                <div class="welcome-message">
-                    <div class="welcome-content">
-                        <img src="logo.png" alt="CloudCast" class="welcome-logo">
-                        <h3>WELCOME TO MS</h3>
-                        <p>SELECT A ROOM TO START MESSAGING</p>
-                        <p>CREATE A NEW ROOM OR JOIN AN EXISTING ONE</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Message input area -->
-            <div class="message-input-area" id="messageInputArea">
-                <div class="input-container">
-                    <input 
-                        type="text" 
-                        id="messageInput"
-                        placeholder="TYPE YOUR MESSAGE..."
-                        maxlength="500"
-                        disabled
-                        data-testid="input-message"
-                    >
-                    <button id="sendButton" class="neo-button primary" disabled data-testid="button-send">
-                        SEND
-                    </button>
-                </div>
-                <div class="input-status">
-                    <span id="typingIndicator" class="typing-indicator hidden">Someone is typing...</span>
-                    <span id="messageStatus" class="message-status">PRESS ENTER TO SEND</span>
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-
-    <!-- Mobile room selector modal -->
-    <div id="roomSelectorModal" class="room-selector-modal hidden">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>SELECT ROOM</h3>
-                <button id="closeModalBtn" class="neo-button small secondary" data-testid="button-close-modal">CLOSE</button>
-            </div>
-            <div class="modal-rooms" id="modalRoomList">
-                <!-- Mobile room list -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Connection overlay -->
-    <div id="connectionOverlay" class="connection-overlay">
-        <div class="connection-message">
-            <div class="loading-spinner"></div>
-            <h3>CONNECTING TO MS...</h3>
-            <p>ESTABLISHING WEBSOCKET CONNECTION</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>MS</title>
+    <meta name="description" content="Loading..." />
+    <!-- Redirect to the public folder version -->
+    <script>
+      window.location.href = '/index.html';
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to MS...</p>
+  </body>
 </html>
